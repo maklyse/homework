@@ -1,0 +1,687 @@
+@import "_reset";
+@import "_proximaBold";
+@import "_proximaLight";
+@import "_proximaRegular";
+@import "_proximaSemibold";
+
+%inblock {
+    display: inline-block;
+    vertical-align: top;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+}
+
+.container {
+    max-width: 1532px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #0a0e34;
+    background-image: url(../images/football.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 110px;
+    &_logo-top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_logo-title {
+        padding-top: 54px;
+    }
+    &_logo-text {
+        padding-top: 53px;
+        color: #ffffff;
+        font-family: "Proxima Nova Light";
+        font-size: 14px;
+        line-height: 34px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+    }
+    .headers_main-title {
+        margin-top: 307px;
+    }
+    .headers_main-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-block {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+    .text-header {
+        color: #ffffff;
+        font-family: "Proxima Nova Bold";
+        font-size: 90px;
+        line-height: 90px;
+        text-transform: uppercase;
+        letter-spacing: 4.96px;
+        z-index: 3;
+        &:last-child {
+            align-self: flex-end;
+            letter-spacing: 4.5px;
+            z-index: 1;
+        }
+    }
+    &_purpule-line {
+        position: absolute;
+        top: -93px;
+        left: 392px;
+        z-index: 2;
+    }
+    .headers_nav-menu {
+        align-self: flex-end;
+        width: 567px;
+    }
+    .nav_menu-table {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-link {
+        text-decoration: none;
+        color: #9071ea;
+        font-family: "Proxima Nova Light";
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+    }
+    .headers-buttons {
+        margin-top: 169px;
+        display: flex;
+        justify-content: space-between;
+        width: 672px;
+    }
+    .store-button {
+        width: 311px;
+        background-color: #5e42b0;
+        box-shadow: 0 16px 24px #0a0e34;
+        background-image: url(../images/apple-icon.png);
+        background-repeat: no-repeat;
+        background-position: 43px 19px;
+        border-radius: 40px 40px 40px 40px;
+        cursor: pointer;
+    }
+    .store-button:last-child{
+        background-image: url(../images/google-play.png);
+    }
+    .link-text {
+        color: #ffffff;
+        font-family: "Proxima Nova Light";
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+    .link-text:last-child {
+        font-family: "Proxima Nova Semibold";
+        letter-spacing: 0.7px;
+    }
+    .store-link {
+        padding: 23px 67px 22px 104px;
+        @extend %inblock;
+        text-align: left;
+        text-decoration: none;
+    }
+    .download-spacing {
+        letter-spacing: 0.7px;
+    }
+}
+
+.main {
+    overflow: auto;
+    padding-top: 98px;
+    .athlets-section {
+        &__title-block {
+            margin-bottom: 76px;
+        }
+        .title-block {
+            &__head {
+                position: relative;
+                width: 50%;
+                max-width: 766px;
+                margin-left: auto;
+            }
+            &__main-title {
+                color: #e7e7e7;
+                font-family: "Proxima Nova Bold";
+                font-size: 90px;
+                line-height: 90px;
+                text-transform: uppercase;
+            }
+            &__footballer {
+                overflow: auto;
+                position: absolute;
+                top: -72px;
+                left: -736px;
+                width: 725px;
+            }
+        }
+        .football {
+            &__text-line {
+                padding-bottom: 55px;
+            }
+            &__text-block {
+                width: 50%;
+                max-width: 766px;
+                margin-left: auto;
+            }
+            &__number {
+
+                @extend %inblock;
+                color: #000000;
+                font-family: "Proxima Nova Bold";
+                font-size: 18px;
+                line-height: 23px;
+                text-transform: uppercase;
+                letter-spacing: 0.9px;
+            }
+            &__number::after {
+                content: "";
+                height: 5px;
+                display: block;
+                border-radius: 2px;
+                background-color: #5e42b0;
+            }
+            &__text-block-title {
+                margin-left: 13px;
+                margin-bottom: 22px;
+                @extend %inblock;
+                color: #c1c1c1;
+                font-family: "Proxima Nova Bold";
+                font-size: 36px;
+                line-height: 36px;
+                text-transform: uppercase;
+                letter-spacing: 1.8px;
+            }
+            &__text {
+                color: #000000;
+                font-family: "Proxima Nova Semibold";
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 1px;
+            }
+            &__text-line--second {
+                padding-top: 59px;
+                padding-bottom: 55px;
+                background-color: #f5f4fa;
+            }
+            &__text-line--third {
+                padding-top: 86px;
+                padding-bottom: 97px;
+                background-color: #5e42b0;
+                .football__number::after {
+                    background-color: #efefef;
+                }
+            }
+
+            &__slider {
+                margin-top: 30px;
+                display: none;
+            }
+            &__circle {
+                width: 10px;
+                height: 10px;
+                background-color: #d8d8d8;
+                border-radius: 50%;
+                cursor: pointer;
+                margin-right: 12px;
+            }
+            &__circle:last-child {
+                margin-right: 0;
+            }
+            &__circle:hover {
+                background-color: #5c3caf;
+                
+            }
+        }
+    }
+    .basketball {
+        .athlets-section {
+            .title-block {
+                &__footballer {
+                    width: 991px;
+                    left: 585px;
+                    top: -121px;
+                }
+                &__footballer-picture {
+                    width: 100%;
+                }
+                &__head {
+                    margin-top: 98px;
+                    margin-right: auto;
+                    margin-left: 0; 
+                    padding-left: 45px;
+                }
+            }
+            .football {
+                &__text-block {
+                    margin-left: 0;
+                    margin-right: auto;
+                    padding-left: 45px;
+                }
+                &__text-line--third {
+                    background-color: #0a0e34;
+                    .football__text {
+                        color: #ffffff;
+                    }
+                }
+                &__number {
+                    color: #9173e6;
+                }
+            }
+        }
+        
+    }
+    .card-section {
+        .card-block {
+            display: flex;
+            .container {
+                max-width: 650px;
+            }
+            &__background-img {
+                width: 50%;
+                background-image: url(../images/shutterstock_229044115.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                min-height: 320px;
+            }
+            &__text-block {
+                width: 50%;
+                padding-left: 127px;
+                max-width: 580px;
+                padding-top: 243px;
+                padding-bottom: 208px;
+            }
+            &__main-title {
+                color: #e6e6e6;
+                font-family: "Proxima Nova Bold";
+                font-size: 90px;
+                line-height: 90px;
+                text-transform: uppercase;
+                margin-bottom: 101px;
+            }
+            &__title-block {
+                position: relative;
+            }
+            &__number-block {
+                position: absolute;
+                left: -209px;
+                top: -33px;
+                width: 168px;
+                height: 155px;
+                background-color: #5e42b0;
+                color: #f5f6f7;
+                font-family: "Proxima Nova Bold";
+                font-size: 24px;
+                line-height: 34px;
+                text-transform: uppercase;
+                letter-spacing: 1.2px;
+                text-align: center;
+                padding-top: 46px;
+            }
+            &__number {
+                @extend %inblock;
+            }
+            &__number::after {
+                content: "";
+                display: block;
+                background-color: #8e7bc8;
+                border-radius: 2px;
+                height: 5px;
+            }
+            &__main-text {
+                @extend %inblock;
+                width: 322px;
+                color: #000000;
+                font-family: "Proxima Nova Semibold";
+                font-size: 24px;
+                line-height: 28px;
+                letter-spacing: 1.2px;
+            }
+            &__main-text::after {
+                content: "";
+                width: 22px;
+                display: block;
+                background-color: #5e42b0;
+                border-radius: 2px;
+                height: 5px;
+                margin-top: 81px;
+            }
+        }
+    }
+    .card-section--second {
+        .card-section {
+            .card-block {
+                display: flex;
+                flex-direction: row-reverse;
+                &__text-block {
+                    max-width: 770px;
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-left: 0;
+                    padding-right: 127px;
+                    padding-bottom: 280px;
+                }
+                &__background-img {
+                    background-image: url(../images/bigstock-Football-players-and-coach-dis-49690757.png);
+                }
+                &__main-title {
+                    width: 100%;
+                }
+                &__title-block {
+                }
+                &__main-text {
+                    width: 400px;
+                }
+                &__main-text::after {
+                    padding-top: 116px;
+                }
+                &__number-block {
+                    left: auto;
+                    right: -83px;
+                }
+            }
+        }
+    }
+    .card-section--third {
+        .card-section {
+            .card-block {
+                &__background-img {
+                    background-image: url(../images/shutterstock_150334202.png);
+                }
+                &__title-block {
+                    padding-bottom: 220px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1531px) {
+    .main {
+
+    }
+}
+
+@media (max-width: 1279px) {
+    .header {
+        .container {
+            padding: 0 21px 0 20px;
+        }
+        .main-block {
+            padding: 0 47px 0 55px;
+            max-width: 700px;
+        }
+        .text-header {
+            font-size: 64px;
+            line-height: 64px;
+            letter-spacing: 3.52px;
+            &:last-child {
+                width: 490px;
+                letter-spacing: 3.2px;
+            }
+        }
+        &_purpule-line {
+            position: absolute;
+            top: -54px;
+            left: 33%;
+            z-index: 1;
+        }
+        .headers_nav-menu {
+            margin-top: 179px;
+            width: 100%;
+        }
+        .nav_menu-table {
+            justify-content: space-around;
+        }
+    }
+
+    .main {
+        padding-top: 68px;
+       .athlets-section {
+           &__title-block {
+            margin-bottom: 41px;
+           }
+           .title-block {
+                &__head {
+                    width: 65%;
+                }
+                &__footballer {
+                    width: 497px;
+                    top: 32px;
+                    left: -439px;
+                }
+                &__footballer-picture {
+                    width: 497px;
+                }
+           }
+           .football {
+               &__text-block {
+                   width: 65%;
+               }
+               &__text {
+                   font-size: 18px;
+               }
+               &__text-block-title {
+                    margin-bottom: 21px;
+               }
+               &__text-line {
+                   padding-bottom: 67px;
+               }
+               &__text-line--second {
+                   padding-top: 35px;
+                   padding-bottom: 32px;
+               }
+               &__text-line--third {
+                   padding-top: 35px;
+                   padding-bottom: 30px;
+               }
+           }
+       }
+       .basketball {
+        .athlets-section {
+            .title-block {
+                &__footballer {
+                    width: 690px;
+                    left: 355px;
+                    top: -32px;
+                }
+            }
+            .football {
+                &__text-block {
+                    max-width: 600px;
+                }
+            }
+         }
+     }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding-bottom: 20px;
+        .container {
+            padding: 0 13px 0 10px;
+        }
+        &_logo-top {
+            justify-content: center;
+        }
+        .headers_main-title {
+            margin-top: 136px;
+        }
+        &_logo-text {
+            display: none;
+        }
+        .main-block {
+            padding: 0;
+            max-width: 320px;
+        }
+        .text-header {
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: 1.76px;
+            &:last-child {
+                width: 245px;
+                letter-spacing: 1.6px;
+            }
+        }
+        &_purpule-line {
+            top: -32px;
+            left: 28%;
+        }
+        .purpule-line {
+            width: 139px;
+            height: 174px;
+        }
+        .headers_nav-menu {
+            margin-top: 42px;
+            order: 2;
+            align-self: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .nav_menu-table {
+            width: 83%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .nav-link {
+            font-size: 12px;
+            line-height: 24px;
+        }
+        .headers-buttons {
+            margin-top: 116px;
+            width: 100%;
+            justify-content: space-around;
+        }
+        .store-button {
+            width: 142px;
+            background-size: 15px 17px;
+            background-position: 20px 11px;
+
+        }
+        .store-link {
+            padding: 10px 17px 9px 44px;
+        }
+        .link-text {
+            font-size: 8px;
+            line-height: 8px;
+        }
+    }
+    .main {
+        .container {
+            padding: 0 18px 0 15px;
+        }
+        padding-top: 0;
+       .athlets-section {
+           &__title-block {
+               margin-bottom: 0;
+           }
+           .title-block {
+                &__head {
+                    padding-top: 13px;
+                    width: 95%;
+                    padding-bottom: 221px;
+                }
+                &__main-title {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+                &__footballer-picture {
+                    width: 192px;
+                }
+                &__footballer {
+                    width: 192px;
+                    left: 56px;
+                    top: 84px;
+                }
+            }
+           .football {
+               &__text-block {
+                   width: 95%;
+               }
+               &__text-line {
+                   display: none;
+               }
+               &__text-line--third {
+                   display: none;
+               }
+               &__text-line--second {
+                   padding-top: 74px;
+               }
+               &__number {
+                   font-size: 14px;
+               }
+               &__text-block-title {
+                   margin-bottom: 18px;
+                   font-size: 28px;
+                   line-height: 34px;
+               }
+               &__text {
+                   font-size: 15px;
+                   line-height: 18px;
+               }
+               &__slider {
+                   display: flex;
+                   justify-content: center;
+               }
+           }
+       }
+       .basketball {
+           .athlets-section {
+               .title-block {
+                   &__footballer {
+                       width: 302px;
+                       left: -19px;
+                       top: 91px;
+                   }
+                    &__head {
+                        padding-left: 0;
+                        margin-top: 0;
+                        margin-left: auto;
+                        margin-right: 0;
+                        padding-top: 23px;
+                        width: 95%;
+                        padding-bottom: 221px;
+                    }
+               }
+               .football {
+                   &__text-line--second {
+                       display: none;
+                   }
+                   &__text-line--third {
+                       display: block;
+                       background-color: #f5f4f9;
+                       padding-top: 74px;
+                       padding-bottom: 27px;
+                       .football__text {
+                        color: #000000;
+                       }
+                   }
+                   &__number {
+                    color: #000000;
+                   }
+                   &__number::after {
+                    background-color: #5e42b0;
+                   }
+                   &__slider {
+                       margin-top: 39px;
+                   }
+               }
+           }
+       }
+    }
+}

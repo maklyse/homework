@@ -1,0 +1,689 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url("../fonts/ProximaNova/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.header .store-link, .main .athlets-section .football__number, .main .athlets-section .football__text-block-title, .main .card-section .card-block__number, .main .card-section .card-block__main-text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+}
+
+.container {
+  max-width: 1532px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #0a0e34;
+  background-image: url(../images/football.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 110px;
+}
+.header_logo-top {
+  display: flex;
+  justify-content: space-between;
+}
+.header_logo-title {
+  padding-top: 54px;
+}
+.header_logo-text {
+  padding-top: 53px;
+  color: #ffffff;
+  font-family: "Proxima Nova Light";
+  font-size: 14px;
+  line-height: 34px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+.header .headers_main-title {
+  margin-top: 307px;
+}
+.header .headers_main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .main-block {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.header .text-header {
+  color: #ffffff;
+  font-family: "Proxima Nova Bold";
+  font-size: 90px;
+  line-height: 90px;
+  text-transform: uppercase;
+  letter-spacing: 4.96px;
+  z-index: 3;
+}
+.header .text-header:last-child {
+  align-self: flex-end;
+  letter-spacing: 4.5px;
+  z-index: 1;
+}
+.header_purpule-line {
+  position: absolute;
+  top: -93px;
+  left: 392px;
+  z-index: 2;
+}
+.header .headers_nav-menu {
+  align-self: flex-end;
+  width: 567px;
+}
+.header .nav_menu-table {
+  display: flex;
+  justify-content: space-between;
+}
+.header .nav-link {
+  text-decoration: none;
+  color: #9071ea;
+  font-family: "Proxima Nova Light";
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+.header .headers-buttons {
+  margin-top: 169px;
+  display: flex;
+  justify-content: space-between;
+  width: 672px;
+}
+.header .store-button {
+  width: 311px;
+  background-color: #5e42b0;
+  box-shadow: 0 16px 24px #0a0e34;
+  background-image: url(../images/apple-icon.png);
+  background-repeat: no-repeat;
+  background-position: 43px 19px;
+  border-radius: 40px 40px 40px 40px;
+  cursor: pointer;
+}
+.header .store-button:last-child {
+  background-image: url(../images/google-play.png);
+}
+.header .link-text {
+  color: #ffffff;
+  font-family: "Proxima Nova Light";
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.header .link-text:last-child {
+  font-family: "Proxima Nova Semibold";
+  letter-spacing: 0.7px;
+}
+.header .store-link {
+  padding: 23px 67px 22px 104px;
+  text-align: left;
+  text-decoration: none;
+}
+.header .download-spacing {
+  letter-spacing: 0.7px;
+}
+
+.main {
+  overflow: auto;
+  padding-top: 98px;
+}
+.main .athlets-section__title-block {
+  margin-bottom: 76px;
+}
+.main .athlets-section .title-block__head {
+  position: relative;
+  width: 50%;
+  max-width: 766px;
+  margin-left: auto;
+}
+.main .athlets-section .title-block__main-title {
+  color: #e7e7e7;
+  font-family: "Proxima Nova Bold";
+  font-size: 90px;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+.main .athlets-section .title-block__footballer {
+  overflow: auto;
+  position: absolute;
+  top: -72px;
+  left: -736px;
+  width: 725px;
+}
+.main .athlets-section .football__text-line {
+  padding-bottom: 55px;
+}
+.main .athlets-section .football__text-block {
+  width: 50%;
+  max-width: 766px;
+  margin-left: auto;
+}
+.main .athlets-section .football__number {
+  color: #000000;
+  font-family: "Proxima Nova Bold";
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+.main .athlets-section .football__number::after {
+  content: "";
+  height: 5px;
+  display: block;
+  border-radius: 2px;
+  background-color: #5e42b0;
+}
+.main .athlets-section .football__text-block-title {
+  margin-left: 13px;
+  margin-bottom: 22px;
+  color: #c1c1c1;
+  font-family: "Proxima Nova Bold";
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+.main .athlets-section .football__text {
+  color: #000000;
+  font-family: "Proxima Nova Semibold";
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.main .athlets-section .football__text-line--second {
+  padding-top: 59px;
+  padding-bottom: 55px;
+  background-color: #f5f4fa;
+}
+.main .athlets-section .football__text-line--third {
+  padding-top: 86px;
+  padding-bottom: 97px;
+  background-color: #5e42b0;
+}
+.main .athlets-section .football__text-line--third .football__number::after {
+  background-color: #efefef;
+}
+.main .athlets-section .football__slider {
+  margin-top: 30px;
+  display: none;
+}
+.main .athlets-section .football__circle {
+  width: 10px;
+  height: 10px;
+  background-color: #d8d8d8;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 12px;
+}
+.main .athlets-section .football__circle:last-child {
+  margin-right: 0;
+}
+.main .athlets-section .football__circle:hover {
+  background-color: #5c3caf;
+}
+.main .basketball .athlets-section .title-block__footballer {
+  width: 991px;
+  left: 585px;
+  top: -121px;
+}
+.main .basketball .athlets-section .title-block__footballer-picture {
+  width: 100%;
+}
+.main .basketball .athlets-section .title-block__head {
+  margin-top: 98px;
+  margin-right: auto;
+  margin-left: 0;
+  padding-left: 45px;
+}
+.main .basketball .athlets-section .football__text-block {
+  margin-left: 0;
+  margin-right: auto;
+  padding-left: 45px;
+}
+.main .basketball .athlets-section .football__text-line--third {
+  background-color: #0a0e34;
+}
+.main .basketball .athlets-section .football__text-line--third .football__text {
+  color: #ffffff;
+}
+.main .basketball .athlets-section .football__number {
+  color: #9173e6;
+}
+.main .card-section .card-block {
+  display: flex;
+}
+.main .card-section .card-block .container {
+  max-width: 650px;
+}
+.main .card-section .card-block__background-img {
+  width: 50%;
+  background-image: url(../images/shutterstock_229044115.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 320px;
+}
+.main .card-section .card-block__text-block {
+  width: 50%;
+  padding-left: 127px;
+  max-width: 580px;
+  padding-top: 243px;
+  padding-bottom: 208px;
+}
+.main .card-section .card-block__main-title {
+  color: #e6e6e6;
+  font-family: "Proxima Nova Bold";
+  font-size: 90px;
+  line-height: 90px;
+  text-transform: uppercase;
+  margin-bottom: 101px;
+}
+.main .card-section .card-block__title-block {
+  position: relative;
+}
+.main .card-section .card-block__number-block {
+  position: absolute;
+  left: -209px;
+  top: -33px;
+  width: 168px;
+  height: 155px;
+  background-color: #5e42b0;
+  color: #f5f6f7;
+  font-family: "Proxima Nova Bold";
+  font-size: 24px;
+  line-height: 34px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-align: center;
+  padding-top: 46px;
+}
+.main .card-section .card-block__number::after {
+  content: "";
+  display: block;
+  background-color: #8e7bc8;
+  border-radius: 2px;
+  height: 5px;
+}
+.main .card-section .card-block__main-text {
+  width: 322px;
+  color: #000000;
+  font-family: "Proxima Nova Semibold";
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1.2px;
+}
+.main .card-section .card-block__main-text::after {
+  content: "";
+  width: 22px;
+  display: block;
+  background-color: #5e42b0;
+  border-radius: 2px;
+  height: 5px;
+  margin-top: 81px;
+}
+.main .card-section--second .card-section .card-block {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.main .card-section--second .card-section .card-block__text-block {
+  max-width: 770px;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 0;
+  padding-right: 127px;
+  padding-bottom: 280px;
+}
+.main .card-section--second .card-section .card-block__background-img {
+  background-image: url(../images/bigstock-Football-players-and-coach-dis-49690757.png);
+}
+.main .card-section--second .card-section .card-block__main-title {
+  width: 100%;
+}
+.main .card-section--second .card-section .card-block__main-text {
+  width: 400px;
+}
+.main .card-section--second .card-section .card-block__main-text::after {
+  padding-top: 116px;
+}
+.main .card-section--second .card-section .card-block__number-block {
+  left: auto;
+  right: -83px;
+}
+.main .card-section--third .card-section .card-block__background-img {
+  background-image: url(../images/shutterstock_150334202.png);
+}
+.main .card-section--third .card-section .card-block__title-block {
+  padding-bottom: 220px;
+}
+
+@media (max-width: 1279px) {
+  .header .container {
+    padding: 0 21px 0 20px;
+  }
+  .header .main-block {
+    padding: 0 47px 0 55px;
+    max-width: 700px;
+  }
+  .header .text-header {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: 3.52px;
+  }
+  .header .text-header:last-child {
+    width: 490px;
+    letter-spacing: 3.2px;
+  }
+  .header_purpule-line {
+    position: absolute;
+    top: -54px;
+    left: 33%;
+    z-index: 1;
+  }
+  .header .headers_nav-menu {
+    margin-top: 179px;
+    width: 100%;
+  }
+  .header .nav_menu-table {
+    justify-content: space-around;
+  }
+
+  .main {
+    padding-top: 68px;
+  }
+  .main .athlets-section__title-block {
+    margin-bottom: 41px;
+  }
+  .main .athlets-section .title-block__head {
+    width: 65%;
+  }
+  .main .athlets-section .title-block__footballer {
+    width: 497px;
+    top: 32px;
+    left: -439px;
+  }
+  .main .athlets-section .title-block__footballer-picture {
+    width: 497px;
+  }
+  .main .athlets-section .football__text-block {
+    width: 65%;
+  }
+  .main .athlets-section .football__text {
+    font-size: 18px;
+  }
+  .main .athlets-section .football__text-block-title {
+    margin-bottom: 21px;
+  }
+  .main .athlets-section .football__text-line {
+    padding-bottom: 67px;
+  }
+  .main .athlets-section .football__text-line--second {
+    padding-top: 35px;
+    padding-bottom: 32px;
+  }
+  .main .athlets-section .football__text-line--third {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  .main .basketball .athlets-section .title-block__footballer {
+    width: 690px;
+    left: 355px;
+    top: -32px;
+  }
+  .main .basketball .athlets-section .football__text-block {
+    max-width: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    padding-bottom: 20px;
+  }
+  .header .container {
+    padding: 0 13px 0 10px;
+  }
+  .header_logo-top {
+    justify-content: center;
+  }
+  .header .headers_main-title {
+    margin-top: 136px;
+  }
+  .header_logo-text {
+    display: none;
+  }
+  .header .main-block {
+    padding: 0;
+    max-width: 320px;
+  }
+  .header .text-header {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1.76px;
+  }
+  .header .text-header:last-child {
+    width: 245px;
+    letter-spacing: 1.6px;
+  }
+  .header_purpule-line {
+    top: -32px;
+    left: 28%;
+  }
+  .header .purpule-line {
+    width: 139px;
+    height: 174px;
+  }
+  .header .headers_nav-menu {
+    margin-top: 42px;
+    order: 2;
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .header .nav_menu-table {
+    width: 83%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .header .nav-link {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .header .headers-buttons {
+    margin-top: 116px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .header .store-button {
+    width: 142px;
+    background-size: 15px 17px;
+    background-position: 20px 11px;
+  }
+  .header .store-link {
+    padding: 10px 17px 9px 44px;
+  }
+  .header .link-text {
+    font-size: 8px;
+    line-height: 8px;
+  }
+
+  .main {
+    padding-top: 0;
+  }
+  .main .container {
+    padding: 0 18px 0 15px;
+  }
+  .main .athlets-section__title-block {
+    margin-bottom: 0;
+  }
+  .main .athlets-section .title-block__head {
+    padding-top: 13px;
+    width: 95%;
+    padding-bottom: 221px;
+  }
+  .main .athlets-section .title-block__main-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .main .athlets-section .title-block__footballer-picture {
+    width: 192px;
+  }
+  .main .athlets-section .title-block__footballer {
+    width: 192px;
+    left: 56px;
+    top: 84px;
+  }
+  .main .athlets-section .football__text-block {
+    width: 95%;
+  }
+  .main .athlets-section .football__text-line {
+    display: none;
+  }
+  .main .athlets-section .football__text-line--third {
+    display: none;
+  }
+  .main .athlets-section .football__text-line--second {
+    padding-top: 74px;
+  }
+  .main .athlets-section .football__number {
+    font-size: 14px;
+  }
+  .main .athlets-section .football__text-block-title {
+    margin-bottom: 18px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .main .athlets-section .football__text {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .main .athlets-section .football__slider {
+    display: flex;
+    justify-content: center;
+  }
+  .main .basketball .athlets-section .title-block__footballer {
+    width: 302px;
+    left: -19px;
+    top: 91px;
+  }
+  .main .basketball .athlets-section .title-block__head {
+    padding-left: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: 0;
+    padding-top: 23px;
+    width: 95%;
+    padding-bottom: 221px;
+  }
+  .main .basketball .athlets-section .football__text-line--second {
+    display: none;
+  }
+  .main .basketball .athlets-section .football__text-line--third {
+    display: block;
+    background-color: #f5f4f9;
+    padding-top: 74px;
+    padding-bottom: 27px;
+  }
+  .main .basketball .athlets-section .football__text-line--third .football__text {
+    color: #000000;
+  }
+  .main .basketball .athlets-section .football__number {
+    color: #000000;
+  }
+  .main .basketball .athlets-section .football__number::after {
+    background-color: #5e42b0;
+  }
+  .main .basketball .athlets-section .football__slider {
+    margin-top: 39px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
